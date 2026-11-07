@@ -1,0 +1,42 @@
+{
+  "task": "V01",
+  "passed": true,
+  "postgres_version": "18.6",
+  "checks": [
+    {
+      "name": "canonical flow, retained correction, real cash and no refund",
+      "expected": "true",
+      "actual": "true",
+      "passed": true
+    },
+    {
+      "name": "source rebuild agrees with canonical projections",
+      "expected": "true",
+      "actual": "true",
+      "passed": true
+    },
+    {
+      "name": "rollback drill reached intentional division by zero",
+      "expected": "22012",
+      "actual": "22012",
+      "passed": true
+    },
+    {
+      "name": "rollback leaves no fact, command receipt or projection delta",
+      "expected": "true",
+      "actual": "true",
+      "passed": true
+    },
+    {
+      "name": "source facts rebuild deleted projections, ignoring stale cached heads",
+      "expected": "true",
+      "actual": "true",
+      "passed": true
+    }
+  ],
+  "observations": [
+    "Rollback error was SQLSTATE 22012; psql session disconnect rolled back the open transaction.",
+    "Cached order/payment heads were deliberately changed to revision 1; source_rebuild still selected revision-2 chain leaves.",
+    "Only v01_smoke was reset. No fixture SQL validation result is treated as a production permission or performance proof."
+  ]
+}

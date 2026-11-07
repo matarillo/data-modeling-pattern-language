@@ -1,0 +1,42 @@
+{
+  "task": "V02",
+  "passed": true,
+  "postgres_version": "18.6",
+  "checks": [
+    {
+      "name": "unguarded check-then-insert both read 10 then write 13",
+      "expected": "10,10,13,13",
+      "actual": "10,10,13,13",
+      "passed": true
+    },
+    {
+      "name": "pg_stat_activity confirms lock wait before releasing A",
+      "expected": "Lock/transactionid/active",
+      "actual": "Lock/transactionid/active",
+      "passed": true
+    },
+    {
+      "name": "competing B reserve is rejected after A commits",
+      "expected": "23514",
+      "actual": "23514",
+      "passed": true
+    },
+    {
+      "name": "guarded final state on_hand,reserved,A-reserved,B-reserved,facts,receipts",
+      "expected": "10,7,7,0,1,1",
+      "actual": "10,7,7,0,1,1",
+      "passed": true
+    },
+    {
+      "name": "all labeled race sessions have exited",
+      "expected": "true",
+      "actual": "true",
+      "passed": true
+    }
+  ],
+  "observations": [
+    "Unsafe control: both READ COMMITTED sessions independently observed available=10 and approved 7/6; unguarded additive writes produced reserved=13 against stock=10.",
+    "Safe race observed postgres pg_stat_activity state: Lock/transactionid/active (backend B's reserve was waiting on A's transaction).",
+    "Safe READ COMMITTED result: order A=7 reserved and committed; order B=6 rejected with SQLSTATE 23514 after lock release; stock remains 10 and reserved=7."
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "format": 1,
+  "ready_to_publish": true,
+  "copyright_holder": "Kentaro Inomata",
+  "license_year": 2026,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
+      "license": "MIT"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "35e040f16e876bc4213756da9b37b2b3d02da1744141b39a3cb9dd1730d9f0e6",
+      "license": "MIT"
+    },
+    {
+      "path": "LICENSE.md",
+      "sha256": "2cd354ec62e4c7cfc0005e12c092696005f9ef92bfa155e30b9afa24991d6af1",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "LICENSES/CC-BY-4.0.md",
+      "sha256": "01987e4ce59e5dffcb0539d882521dbf1971a7d62bf3f612ee507cf91f8f86c6",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "LICENSES/MIT.txt",
+      "sha256": "44107a6d696197631084a1503fca8744aa69af64ff1ca5a7479909efe5a12d28",
+      "license": "MIT"
+    },
+    {
+      "path": "README.md",
+      "sha256": "9b3d6e3fb7f96480fc004d7ca32885bb9b30405c6ccf3aa85c15cef0710edbf7",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "docs/business-model.md",
+      "sha256": "ec2625fc0ad1aa124140bd0ed6e08906897ba1ddf0c73e893f3bc64f1dbfbc81",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "docs/report-concise.md",
+      "sha256": "9f0ba3d2c7f26261afdb465c284777c3f8757992aaa599d4b350c8ffc00f73a5",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "docs/report-detailed.md",
+      "sha256": "2430b7174a5cb0fff6cc5bffc4c4d93778d97f44864624b0979e31705ebce1bb",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "validation/README.md",
+      "sha256": "f358cc2456c036224d7e2bd4f51474b5b5337f8224e7479b4e7c8c045387d735",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "validation/cases/V01/README.md",
+      "sha256": "8800df8d36e0df4256c2c6e7ea5150d42effa0d628e782d58e5c874b8ca13ef8",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "validation/cases/V01/results.json",
+      "sha256": "a8b6b1257fd73b7070da8f8dbd51f18e19feb405a706818050aed3b08656d9d6",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "validation/cases/V01/run.ps1",
+      "sha256": "25b291c938b33090e6fe9b7bafa179919fb8fddc71851ed02813e3669bf0e439",
+      "license": "MIT"
+    },
+    {
+      "path": "validation/cases/V02/README.md",
+      "sha256": "deeea36a330244ded08d277535d3e7012e328117053f3bdd96dd2b3f99ccc950",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "validation/cases/V02/results.json",
+      "sha256": "f838de12af29add7f5071feca9f2e665e4549827b3d9702eb230777ff2704234",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "validation/cases/V02/run.ps1",
+      "sha256": "bf5a8b48c3a3c51eb3f0819ff69cf5ab2e297081feaafd90b09b10b756c98e6b",
+      "license": "MIT"
+    },
+    {
+      "path": "validation/cases/V03/README.md",
+      "sha256": "696fbd7b9ec3c66d2c411edd54ad360423e92e2b552d88540d09ce354f0e0170",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "validation/cases/V03/results.json",
+      "sha256": "0aa6bc6758f8d9994248528b9873facc0f38eaebbf04b6421e4bdb412c27d5c1",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "validation/cases/V03/run.ps1",
+      "sha256": "8cf39611f3e88d5961ceeec0cb44ec94700141013f04a603ab197790bdb6f798",
+      "license": "MIT"
+    },
+    {
+      "path": "validation/cases/V04/README.md",
+      "sha256": "6c4c783467630ce9e8364faafbfdac31350049759ed1acac7d76a30a98e26aeb",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "validation/cases/V04/results.json",
+      "sha256": "48791c793853fe4c5f7fb70bbe5f5e0a049055eb411ee42758238aef9e577f90",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "validation/cases/V04/run.ps1",
+      "sha256": "c8ec618462dd59dbdff24b3c61d8ba7bd9aeb27b185dcd2f98ba30956ac0c9ac",
+      "license": "MIT"
+    },
+    {
+      "path": "validation/environment/Manage.ps1",
+      "sha256": "85445baa13c38996f15792a8b1ff8c0444b17a79c6049576b71ecccd8f4e5732",
+      "license": "MIT"
+    },
+    {
+      "path": "validation/environment/README.md",
+      "sha256": "c5f52effce9c61f29c23470f0f95a83196d0b831ca22a96a1ebf203869b899b3",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "validation/harness/Common.ps1",
+      "sha256": "142746673c9af7ac77b1f5fc3872e45b95f5115983c448bd3ec68d0a8e82310d",
+      "license": "MIT"
+    },
+    {
+      "path": "validation/harness/fixture.sql",
+      "sha256": "4cfde98ee4d382fe0cc100eed439ec0c0353ff9bc28ddc77e673ee6aa7c60211",
+      "license": "MIT"
+    },
+    {
+      "path": "validation/results.json",
+      "sha256": "7e73015e67352257034496f8b59ba85be231da5652d14be8ad8e69da9d61bd0e",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "validation/run-all.ps1",
+      "sha256": "64c5a62d3850ba5d93fcbe8da780577d418b2888094003e21ef2617e6d1340d5",
+      "license": "MIT"
+    }
+  ]
+}

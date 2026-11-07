@@ -1,0 +1,72 @@
+{
+  "task": "V03",
+  "passed": true,
+  "postgres_version": "18.6",
+  "checks": [
+    {
+      "name": "committed request replay returns original result",
+      "expected": "REPLAY:cash_receipt_fact:CASH-V03-1",
+      "actual": "REPLAY:cash_receipt_fact:CASH-V03-1",
+      "passed": true
+    },
+    {
+      "name": "replay leaves one fact, original amount, one receipt",
+      "expected": "1|3000|1",
+      "actual": "1|3000|1",
+      "passed": true
+    },
+    {
+      "name": "same command key changed amount conflicts",
+      "expected": "22000",
+      "actual": "22000",
+      "passed": true
+    },
+    {
+      "name": "payload conflict leaves committed fact/digest unchanged",
+      "expected": "1|3000|5474415fe8b26978cdcb5f7f6113f5768a20af4529424bf6c9e48181f07afdc7",
+      "actual": "1|3000|5474415fe8b26978cdcb5f7f6113f5768a20af4529424bf6c9e48181f07afdc7",
+      "passed": true
+    },
+    {
+      "name": "new command key cannot repeat external receipt",
+      "expected": "23505",
+      "actual": "23505",
+      "passed": true
+    },
+    {
+      "name": "external duplicate rollback removes command receipt",
+      "expected": "1|3000|0",
+      "actual": "1|3000|0",
+      "passed": true
+    },
+    {
+      "name": "first backend holds receipt in open transaction",
+      "expected": "idle in transaction|true",
+      "actual": "idle in transaction|true",
+      "passed": true
+    },
+    {
+      "name": "same-key concurrent call observed waiting on uncommitted unique key",
+      "expected": "active|Lock|transactionid",
+      "actual": "active|Lock|transactionid",
+      "passed": true
+    },
+    {
+      "name": "same-key concurrent caller returns saved result",
+      "expected": "REPLAY:cash_receipt_fact:CASH-V03-RACE",
+      "actual": "REPLAY:cash_receipt_fact:CASH-V03-RACE",
+      "passed": true
+    },
+    {
+      "name": "concurrent retry leaves one receipt and one command result",
+      "expected": "1|500|1",
+      "actual": "1|500|1",
+      "passed": true
+    }
+  ],
+  "observations": [
+    "pg_stat_activity observed application_name=v03-race-b, state=active, wait_event_type=Lock, wait_event=transactionid, while same-key record_cash_receipt was blocked.",
+    "First backend committed; second backend resumed and completed its idempotent lookup.",
+    "All calls used fixture record_cash_receipt; server computed SHA-256 payload identity from operation and supplied business arguments."
+  ]
+}

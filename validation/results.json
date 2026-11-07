@@ -1,0 +1,35 @@
+{
+  "scope": "single-SKU PostgreSQL invariant proofs; no performance or production-permission claim",
+  "fixture_sha256": "4cfde98ee4d382fe0cc100eed439ec0c0353ff9bc28ddc77e673ee6aa7c60211",
+  "passed": true,
+  "cases": [
+    {
+      "task": "V01",
+      "passed": true,
+      "checks": 5,
+      "postgres_version": "18.6",
+      "result_file": "validation/cases/V01/results.json"
+    },
+    {
+      "task": "V02",
+      "passed": true,
+      "checks": 5,
+      "postgres_version": "18.6",
+      "result_file": "validation/cases/V02/results.json"
+    },
+    {
+      "task": "V03",
+      "passed": true,
+      "checks": 10,
+      "postgres_version": "18.6",
+      "result_file": "validation/cases/V03/results.json"
+    },
+    {
+      "task": "V04",
+      "passed": true,
+      "checks": 88,
+      "postgres_version": "PostgreSQL 18.6 on x86_64-windows, compiled by msvc-19.51.36260, 64-bit",
+      "result_file": "validation/cases/V04/results.json"
+    }
+  ]
+}

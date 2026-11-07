@@ -1,0 +1,627 @@
+{
+  "task": "V04",
+  "passed": true,
+  "postgres_version": "PostgreSQL 18.6 on x86_64-windows, compiled by msvc-19.51.36260, 64-bit",
+  "checks": [
+    {
+      "name": "ship_wins baseline on_hand",
+      "expected": "7",
+      "actual": "7",
+      "passed": true
+    },
+    {
+      "name": "ship_wins baseline reserved",
+      "expected": "5",
+      "actual": "5",
+      "passed": true
+    },
+    {
+      "name": "ship_wins baseline shipped/cancelled",
+      "expected": "3/0",
+      "actual": "3/0",
+      "passed": true
+    },
+    {
+      "name": "ship_wins losing backend state",
+      "expected": "active",
+      "actual": "active",
+      "passed": true
+    },
+    {
+      "name": "ship_wins lock wait type",
+      "expected": "Lock",
+      "actual": "Lock",
+      "passed": true
+    },
+    {
+      "name": "ship_wins has blocking backend",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "ship_wins blocked by winning backend",
+      "expected": "25968",
+      "actual": "25968",
+      "passed": true
+    },
+    {
+      "name": "ship_wins losing operation SQLSTATE",
+      "expected": "23514",
+      "actual": "23514",
+      "passed": true
+    },
+    {
+      "name": "ship_wins final on_hand",
+      "expected": "2",
+      "actual": "2",
+      "passed": true
+    },
+    {
+      "name": "ship_wins final inventory_reserved",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "name": "ship_wins final inventory_version",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "name": "ship_wins final current_revision",
+      "expected": "1",
+      "actual": "1",
+      "passed": true
+    },
+    {
+      "name": "ship_wins final ordered_qty",
+      "expected": "8",
+      "actual": "8",
+      "passed": true
+    },
+    {
+      "name": "ship_wins final shipped_qty",
+      "expected": "8",
+      "actual": "8",
+      "passed": true
+    },
+    {
+      "name": "ship_wins final cancelled_qty",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "name": "ship_wins final order_reserved",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "name": "ship_wins final order_version",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "name": "ship_wins final source_on_hand",
+      "expected": "2",
+      "actual": "2",
+      "passed": true
+    },
+    {
+      "name": "ship_wins final source_reserved",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "name": "ship_wins final source_shipped",
+      "expected": "8",
+      "actual": "8",
+      "passed": true
+    },
+    {
+      "name": "ship_wins final source_cancelled",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "name": "ship_wins final source_reserved_qty",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "name": "ship_wins final shipment_fact_count",
+      "expected": "2",
+      "actual": "2",
+      "passed": true
+    },
+    {
+      "name": "ship_wins final cancellation_fact_count",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "name": "ship_wins final reservation_fact_count",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "name": "ship_wins final loser_command_receipt_count",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "name": "ship_wins committed guard projection version advanced",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "name": "ship_wins committed order projection version advanced",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "name": "ship_wins fresh source rebuild equals projection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "cancel_wins baseline on_hand",
+      "expected": "7",
+      "actual": "7",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins baseline reserved",
+      "expected": "5",
+      "actual": "5",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins baseline shipped/cancelled",
+      "expected": "3/0",
+      "actual": "3/0",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins losing backend state",
+      "expected": "active",
+      "actual": "active",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins lock wait type",
+      "expected": "Lock",
+      "actual": "Lock",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins has blocking backend",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "cancel_wins blocked by winning backend",
+      "expected": "14424",
+      "actual": "14424",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins losing operation SQLSTATE",
+      "expected": "23514",
+      "actual": "23514",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins final on_hand",
+      "expected": "7",
+      "actual": "7",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins final inventory_reserved",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins final inventory_version",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins final current_revision",
+      "expected": "1",
+      "actual": "1",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins final ordered_qty",
+      "expected": "8",
+      "actual": "8",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins final shipped_qty",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins final cancelled_qty",
+      "expected": "5",
+      "actual": "5",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins final order_reserved",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins final order_version",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins final source_on_hand",
+      "expected": "7",
+      "actual": "7",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins final source_reserved",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins final source_shipped",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins final source_cancelled",
+      "expected": "5",
+      "actual": "5",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins final source_reserved_qty",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins final shipment_fact_count",
+      "expected": "1",
+      "actual": "1",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins final cancellation_fact_count",
+      "expected": "1",
+      "actual": "1",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins final reservation_fact_count",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins final loser_command_receipt_count",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins committed guard projection version advanced",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins committed order projection version advanced",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "name": "cancel_wins fresh source rebuild equals projection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel baseline on_hand",
+      "expected": "7",
+      "actual": "7",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel baseline reserved",
+      "expected": "5",
+      "actual": "5",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel baseline shipped/cancelled",
+      "expected": "3/0",
+      "actual": "3/0",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel losing backend state",
+      "expected": "active",
+      "actual": "active",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel lock wait type",
+      "expected": "Lock",
+      "actual": "Lock",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel has blocking backend",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel blocked by winning backend",
+      "expected": "36176",
+      "actual": "36176",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel losing operation SQLSTATE",
+      "expected": "23514",
+      "actual": "23514",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel final on_hand",
+      "expected": "7",
+      "actual": "7",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel final inventory_reserved",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel final inventory_version",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel final current_revision",
+      "expected": "1",
+      "actual": "1",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel final ordered_qty",
+      "expected": "8",
+      "actual": "8",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel final shipped_qty",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel final cancelled_qty",
+      "expected": "5",
+      "actual": "5",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel final order_reserved",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel final order_version",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel final source_on_hand",
+      "expected": "7",
+      "actual": "7",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel final source_reserved",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel final source_shipped",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel final source_cancelled",
+      "expected": "5",
+      "actual": "5",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel final source_reserved_qty",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel final shipment_fact_count",
+      "expected": "1",
+      "actual": "1",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel final cancellation_fact_count",
+      "expected": "1",
+      "actual": "1",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel final reservation_fact_count",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel final loser_command_receipt_count",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel committed guard projection version advanced",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel committed order projection version advanced",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "name": "cancel_cancel fresh source rebuild equals projection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "no leaked V04 sessions or transactions",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    }
+  ],
+  "observations": [
+    {
+      "race": "ship_wins",
+      "phase": "winner_function_returned_inside_open_transaction",
+      "backend": "25968|idle in transaction|Client|ClientRead||SELECT ship('O-1',1,'RES-1',5,'SHIP-RACE-ship_wins','cmd-ship_wins-winner');"
+    },
+    {
+      "race": "ship_wins",
+      "phase": "loser_blocked_on_database_lock",
+      "backend": "35060|active|Lock|transactionid|25968|SELECT cancel_remaining('O-1',1,'RES-1',5,'customer_cancel_remaining','CANCEL-LOSER-ship_wins','cmd-ship_wins-loser');"
+    },
+    {
+      "race": "ship_wins",
+      "phase": "loser_error",
+      "winner": "committed",
+      "loser_exit_code": 3,
+      "sqlstate": "23514",
+      "error": "ERROR:  23514: reservation exhausted\r\nCONTEXT:  PL/pgSQL function _move(text,integer,text,integer,text,text,text,text) line 14 at RAISE\r\nLOCATION:  exec_stmt_raise, pl_exec.c:3923\r\n\nSET\r\nSET\r\nBEGIN"
+    },
+    {
+      "race": "ship_wins",
+      "phase": "fresh_connection_committed_read",
+      "state": {
+        "connection": "new psql connection",
+        "on_hand": "2",
+        "reserved": "0",
+        "inventory_version": "3",
+        "order_version": "3",
+        "source_rebuild_matches": true
+      }
+    },
+    {
+      "race": "cancel_wins",
+      "phase": "winner_function_returned_inside_open_transaction",
+      "backend": "14424|idle in transaction|Client|ClientRead||SELECT cancel_remaining('O-1',1,'RES-1',5,'customer_cancel_remaining','CANCEL-RACE-cancel_wins','cmd-cancel_wins-winner');"
+    },
+    {
+      "race": "cancel_wins",
+      "phase": "loser_blocked_on_database_lock",
+      "backend": "9236|active|Lock|transactionid|14424|SELECT ship('O-1',1,'RES-1',5,'SHIP-LOSER-cancel_wins','cmd-cancel_wins-loser');"
+    },
+    {
+      "race": "cancel_wins",
+      "phase": "loser_error",
+      "winner": "committed",
+      "loser_exit_code": 3,
+      "sqlstate": "23514",
+      "error": "ERROR:  23514: reservation exhausted\r\nCONTEXT:  PL/pgSQL function _move(text,integer,text,integer,text,text,text,text) line 14 at RAISE\r\nLOCATION:  exec_stmt_raise, pl_exec.c:3923\r\n\nSET\r\nSET\r\nBEGIN"
+    },
+    {
+      "race": "cancel_wins",
+      "phase": "fresh_connection_committed_read",
+      "state": {
+        "connection": "new psql connection",
+        "on_hand": "7",
+        "reserved": "0",
+        "inventory_version": "3",
+        "order_version": "3",
+        "source_rebuild_matches": true
+      }
+    },
+    {
+      "race": "cancel_cancel",
+      "phase": "winner_function_returned_inside_open_transaction",
+      "backend": "36176|idle in transaction|Client|ClientRead||SELECT cancel_remaining('O-1',1,'RES-1',5,'customer_cancel_remaining','CANCEL-RACE-cancel_cancel','cmd-cancel_cancel-winner');"
+    },
+    {
+      "race": "cancel_cancel",
+      "phase": "loser_blocked_on_database_lock",
+      "backend": "17096|active|Lock|transactionid|36176|SELECT cancel_remaining('O-1',1,'RES-1',5,'customer_cancel_remaining','CANCEL-LOSER-cancel_cancel','cmd-cancel_cancel-loser');"
+    },
+    {
+      "race": "cancel_cancel",
+      "phase": "loser_error",
+      "winner": "committed",
+      "loser_exit_code": 3,
+      "sqlstate": "23514",
+      "error": "ERROR:  23514: reservation exhausted\r\nCONTEXT:  PL/pgSQL function _move(text,integer,text,integer,text,text,text,text) line 14 at RAISE\r\nLOCATION:  exec_stmt_raise, pl_exec.c:3923\r\n\nSET\r\nSET\r\nBEGIN"
+    },
+    {
+      "race": "cancel_cancel",
+      "phase": "fresh_connection_committed_read",
+      "state": {
+        "connection": "new psql connection",
+        "on_hand": "7",
+        "reserved": "0",
+        "inventory_version": "3",
+        "order_version": "3",
+        "source_rebuild_matches": true
+      }
+    }
+  ]
+}
